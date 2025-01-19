@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(xbox_controller_msgs)
+project(ros2_input_msgs)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     add_compile_options(-Wall -Wextra -Wpedantic)
@@ -10,12 +10,5 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/XboxControllerState.msg"
 )
-
-if(BUILD_TESTING)
-    find_package(ament_lint_auto REQUIRED)
-    set(ament_cmake_copyright_FOUND TRUE)
-    set(ament_cmake_cpplint_FOUND TRUE)
-    ament_lint_auto_find_test_dependencies()
-endif()
 
 ament_package()
