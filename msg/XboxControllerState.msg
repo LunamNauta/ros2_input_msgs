@@ -1,9 +1,9 @@
-int16 rj_x
-int16 rj_y
-int16 lj_x
-int16 lj_y
-int16 rt
-int16 lt
+float32 rj_x
+float32 rj_y
+float32 lj_x
+float32 lj_y
+float32 rt
+float32 lt
 bool rj_d
 bool lj_d
 bool lb
